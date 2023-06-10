@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Link/Button Localization</title>
+</head>
+
+<body onload="setCheckboxCurrentDatas();">
+
+<!-- FILTERS -->
+<div>
+    <div class="form-check">
+        <input class="catalogue-checkbox" type="checkbox" value="filter1" id="filter1" onchange="setCheckboxCurrentDatas();">
+        <label for="filter1">Filter 1</label>
+    </div>
+    <input class="catalogue-checkbox" type="checkbox" value="filter2" id="filter2" onchange="setCheckboxCurrentDatas();">
+    <label for="filter2">Filter 2</label>
+    </div>
+    <div class="form-check">
+        <input class="catalogue-checkbox" type="checkbox" value="filter3" id="filter3" onchange="setCheckboxCurrentDatas();">
+        <label for="filter3">Filter 3</label>
+    </div>
+</div>
+
+<!-- GRILLE D'IMAGES -->
+<div>
+    <p class="catalogue-element text_container_bis" id="no-filter">Sorry... It would seem nothing exists with your filters yet. Please try with different ones.</p>
+    <img class="catalogue-element filter1 filter2" class="img-fluid img_games pb-3" src="filter_img1.png"/>
+    <img class="catalogue-element filter2" class="img-fluid img_games pb-3" src="filter_img2.png"/>
+    <img class="catalogue-element filter3" class="img-fluid img_games pb-3" src="filter_img3.png"/>
+</div>
+
+    <script src="filters.js"></script>
+    </body>
+</html>
